@@ -1,0 +1,44 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.panel{
+	padding: 25px;
+	background-color: gray;
+	border: black 4px solid;
+	border-radius: 20px;
+}
+
+.light{
+	height: 100px;
+	width: 100px;
+	border: black 2px solid;
+	border-radius: 100%;
+	box-sizing: border-box;
+	background-color: black;
+	margin: 5px 0;
+}
+
+.green-light{
+	background-color: green;
+}
+
+.yellow-light{
+	background-color: yellow;
+}
+
+.red-light{
+	background-color: red;
+}
+
+.container{
+	padding: 5rem;
+	display: flex;
+	justify-content: center;
+}
+
+a{
+	padding: 1rem;
+	border: black solid 1px;
+}
