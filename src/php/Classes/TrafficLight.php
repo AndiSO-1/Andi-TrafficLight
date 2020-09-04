@@ -9,9 +9,9 @@ class TrafficLight{
     public $green = false;
 
     /**
-     * @param int $state
+     * @param $state
      */
-    function setState($state = 0)
+    function getState($state)
     {
         // State choose which light turn on
         switch($state)
@@ -45,10 +45,10 @@ class TrafficLight{
     }
 
     /**
-     * @param int $state
+     * @param $state
      * @return int
      */
-    function nextState($state = 0)
+    function nextState($state)
     {
         return ++$state % 4;
     }

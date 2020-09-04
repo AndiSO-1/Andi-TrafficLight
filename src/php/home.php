@@ -6,7 +6,7 @@ require_once('Classes/TrafficLight.php');
 
 $trafficLight = new TrafficLight();
 $state = isset($_GET["state"]) ? htmlspecialchars($_GET["state"]) : 0;
-$trafficLight->setState($state);
+$trafficLight->getState($state);
 ?>
 
 <html>
