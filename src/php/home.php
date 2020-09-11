@@ -15,7 +15,10 @@ $trafficLight = new TrafficLight();
 $trafficLight->setState($state);
 
 // Change the traffic light state
-isset($_GET["next"]) ? $trafficLight->next() : $trafficLight->pause();
+if (isset($_GET["next"]))
+    $trafficLight->next();
+else if (isset($_GET["pause"]))
+    $trafficLight->pause();
 
 // Reset the state in the traffic light obj to have the wanted state
 $trafficLight->setState($trafficLight->getState());
