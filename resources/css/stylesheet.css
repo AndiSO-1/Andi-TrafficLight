@@ -3,6 +3,10 @@
 	padding:0;
 }
 
+body{
+	background-color: whitesmoke;
+}
+
 .panel{
 	padding: 25px;
 	background-color: gray;
@@ -39,6 +43,19 @@
 }
 
 a{
-	padding: 1rem;
+	padding: 1rem 20rem;
+	margin: 2rem;
 	border: black solid 1px;
+	background-color: steelblue;
+	color: whitesmoke;
+}
+
+/* Jaune clignote */
+.yellow-light-blink {
+	background-color: yellow;
+	animation: blink-yellow 2s infinite;
+}
+@keyframes blink-yellow {
+	0% { }
+	50% { background-color:black; }
 }
