@@ -51,7 +51,7 @@ $_SESSION["state"] = $trafficLight->getState();
 <!--Traffic Light action btns-->
 <div class="container">
     <a href="home.php?next">Next</a>
-    <a href="home.php?pause">Pause</a>
+    <a href="home.php?pause" class="<?= $trafficLight->yellow ? "shake-horizontal" : "" ?>">Pause</a>
 </div>
 </body>
 </html>
