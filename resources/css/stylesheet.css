@@ -1,6 +1,6 @@
 *{
-	margin:0;
-	padding:0;
+
+	box-sizing: border-box;
 }
 
 body{
@@ -8,6 +8,7 @@ body{
 }
 
 .panel{
+	margin: 2rem;
 	padding: 25px;
 	border: black 4px solid;
 	border-radius: 20px;
@@ -42,17 +43,22 @@ body{
 }
 
 .container{
-	padding: 5rem;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
-a{
-	padding: 1rem 15%;
-	margin: 2rem;
+a.btn{
+	/*flex: 0 0 100%;*/
+	margin: 1rem;
+	padding: 1rem 10%;
 	border: black solid 1px;
 	background-color: steelblue;
 	color: whitesmoke;
+}
+
+a.btn:link{
+	text-decoration: none;
 }
 
 /* Jaune clignote */

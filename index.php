@@ -8,12 +8,15 @@ ob_start();
 switch($basic_l){
     case "/":case "":case "/home":
         require_once 'src/php/controller/home.php';
-        require_once 'src/php/views/home.php';
+        require_once 'src/php/view/home.php';
+        break;
+    default:
+        http_response_code(404);
         break;
 }
 
 $_VIEW = ob_get_clean();
 
-require_once 'src/php/views/layout.php';
+require_once 'src/php/view/layout.php';
 
 ?>
