@@ -32,4 +32,6 @@ $red_light = $trafficLight->red ? "red-light" : "";
 $yellow_light = $trafficLight->yellow ? "yellow-light" : "";
 $green_light = $trafficLight->green ? "green-light" : "";
 $pause_light = $trafficLight->pause ? "yellow-light-blink" : "";
+$show_restart_light = $trafficLight->pause ? true : false;
 $show_pause_light = $trafficLight->yellow || $trafficLight->pause ? false : true;
+$active_state = $trafficLight->getState();

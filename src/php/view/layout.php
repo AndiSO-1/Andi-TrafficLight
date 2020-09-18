@@ -6,6 +6,7 @@
     <title>Traffic Light</title>
 
     <link rel="stylesheet" type="text/css" href="/resources/css/stylesheet.css">
+    <script type="text/javascript" src="/src/js/traffic_light.js"></script>
 </head>
 
 
