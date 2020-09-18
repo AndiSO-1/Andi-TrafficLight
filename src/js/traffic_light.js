@@ -1,20 +1,25 @@
+/**
+ * Use the state to relocate the page a few seconds
+ *
+ * @param state
+ */
 function updateTrafficLight(state){
-    var path_next_state = "/home?next";
+    const PATH_NEXT_STATE = "/home?next";
 
-    switch(parseInt(state)){ // 10 1 5
-        case 0:
+    switch(parseInt(state)){
+        case 0: // Feu rouge reste 10 secondes
             setTimeout(() => {
-                window.location=path_next_state;
+                window.location=PATH_NEXT_STATE;
             }, 10000);
             break;
-        case 1: case 3:
+        case 1: case 3: // Feu jaune reste 1 seconde
             setTimeout(() => {
-                window.location=path_next_state;
+                window.location=PATH_NEXT_STATE;
             }, 1000);
             break;
-        case 2:
+        case 2: // Feu vert reste 5 secondes
             setTimeout(() => {
-                window.location=path_next_state;
+                window.location=PATH_NEXT_STATE;
             }, 5000);
             break;
         case 4:
