@@ -12,9 +12,7 @@
 <body>
 
 <header>
-    <nav>
-
-    </nav>
+    <h1>Traffic Light</h1>
 </header>
 
 <div>

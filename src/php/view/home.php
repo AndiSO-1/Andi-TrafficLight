@@ -11,6 +11,8 @@
 <div class="container">
     <a href="home?next" class="btn">Next</a>
 </div>
+<?php if ($show_pause_light): ?>
 <div class="container">
-    <a href="home?pause" class="btn" <?= $shake_pause_light ?>>Pause</a>
+    <a href="home?pause" class="btn">Pause</a>
 </div>
+<?php endif; ?>
