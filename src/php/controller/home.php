@@ -28,10 +28,12 @@ $_SESSION["state"] = $trafficLight->getState();
 
 
 // Classes css à rajouter dans le view
-$red_light = $trafficLight->red ? "red-light" : "";
-$yellow_light = $trafficLight->yellow ? "yellow-light" : "";
-$green_light = $trafficLight->green ? "green-light" : "";
-$pause_light = $trafficLight->pause ? "yellow-light-blink" : "";
-$show_restart_light = $trafficLight->pause ? true : false;
-$show_pause_light = $trafficLight->yellow || $trafficLight->pause ? false : true;
-$active_state = $trafficLight->getState();
+$red_light = $trafficLight->red ? "red-light" : ""; // CSS class display red light
+$yellow_light = $trafficLight->yellow ? "yellow-light" : ""; // CSS class display yellow light
+$green_light = $trafficLight->green ? "green-light" : ""; // CSS class display green light
+$pause_light = $trafficLight->pause ? "yellow-light-blink" : "";  // CSS class display yellow blink light
+$show_restart_light = $trafficLight->pause ? true : false; // True -> display restart btn to continue traffic light
+$show_pause_light = $trafficLight->yellow || $trafficLight->pause ? false : true; // True -> display pause btn to "broke" traffic light
+$active_auto_next_page = !$trafficLight->pause ? true : false; // True -> active the auto refresh of the page to see next state
+$path_next = "/home?next";
+$path_wait_time = $trafficLight->wait_time;

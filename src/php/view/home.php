@@ -1,6 +1,10 @@
+<script type="text/javascript" src="/src/js/traffic_light.js"></script>
+
 <script>
-    window.addEventListener("load", function(event) {
-        updateTrafficLight(<?= $active_state ?>);
+    window.addEventListener("load", function (event) {
+        <?php if ($active_auto_next_page): ?>
+        sendToPage("<?= $path_next ?>", <?= $path_wait_time ?>);
+        <?php endif; ?>
     });
 </script>
 
@@ -15,12 +19,12 @@
 
 <!--Traffic Light action btns-->
 <?php if ($show_restart_light): ?>
-<div class="container">
-    <a href="home?next" class="btn">Restart</a>
-</div>
+    <div class="container">
+        <a href="home?next" class="btn">Restart</a>
+    </div>
 <?php endif; ?>
 <?php if ($show_pause_light): ?>
-<div class="container">
-    <a href="home?pause" class="btn">Pause</a>
-</div>
+    <div class="container">
+        <a href="home?pause" class="btn">Pause</a>
+    </div>
 <?php endif; ?>
